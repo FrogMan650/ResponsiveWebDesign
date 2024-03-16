@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Survey Form</title>
+    <link rel="stylesheet" href="SurveyFormStyles.css"/>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to give us your feedback!</p>
+    <form id="survey-form">
+      <label id="name-label">Name</label>
+      <input class="input1" id="name" type="text" required placeholder="Please enter your name">
+      <label id="email-label">Email</label>
+      <input class="input1" id="email" type="email" required placeholder="Please enter your Email">
+      <label id="number-label">Age</label>
+      <input class="input1" id="number" type="number" min="12" max="150" placeholder="Please enter your age" >
+      <label id="option-label">What type of job are you hoping to get?</label>
+      <select class="input1" id="dropdown">
+        <option value="">Select One</option>
+        <option value="">Programmer</option>
+        <option value="">Machine learning</option>
+        <option value="">Full stack developer</option>
+      </select>
+      <fieldset class="radio-buttons">
+        <legend>Confidence in finding a job</legend>
+        <label>
+          <input type="radio" value="confidence-high" name="confidence">High
+          </label>
+        <label>
+          <input type="radio" value="confidence-medium" name="confidence">Medium
+        </label>
+
+        <label>
+          <input type="radio" value="confidence-low" name="confidence">Low
+        </label>
+      </fieldset>
+
+      <fieldset class="checkboxes">
+        <legend>Which Certificates have you finished?</legend>
+        <label>
+          <input type="checkbox" value="responsive-web-design" name="responsive-web-design">Responsive web design
+        </label>
+        <label>
+          <input type="checkbox" value="javascript-algarithms" name="javascript-algarithms">Javascript algarithms and data structures
+        </label>
+        <label>
+          <input type="checkbox" value="javascript-algarithms" name="javascript-algarithms">Front end development libraries
+        </label>
+        <label>
+          <input type="checkbox" value="data-visualization" name="data-visualization">Data visualization
+        </label>
+        <label>
+          <input type="checkbox" value="relational-database" name="relational-database">Relational database
+        </label>
+        <label>
+          <input type="checkbox" value="back-end-development" name="back-end-development">Back end development
+        </label>
+        <label>
+          <input type="checkbox" value="quality-assurance" name="quality-assurance">Quality assurance
+        </label>
+        <label>
+          <input type="checkbox" value="scientific-computing" name="scientific-computing">Scientific computing with python
+        </label>
+        <label>
+          <input type="checkbox" value="data-analysis" name="data-analysis">Data analysis with python
+        </label>
+        <label>
+          <input type="checkbox" value="info-security" name="info-security">Information security
+        </label>
+        <label>
+          <input type="checkbox" value="machine-learning" name="machine-learning">Machine learning with python
+        </label>
+        <label>
+          <input type="checkbox" value="college-algebra" name="college-algebra">College algebra with python
+        </label>
+      </fieldset>
+
+      <label>Additional comments
+        <textarea rows="5" placeholder="Please type any additional comments you have for us here"></textarea>
+      </label>
+      <input id="submit" type="submit" value="Submit" class="input1"/>
+    </form>
+  </body>
+</html>
