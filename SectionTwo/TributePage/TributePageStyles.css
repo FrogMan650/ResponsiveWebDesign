@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 10px;
+  }
+  img {
+    height: auto;
+    border-radius: 5px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #e0d93d;
+    font-size: 4rem;
+  }
+  
+  body {
+    background-image: url(blue_background.png);
+    font-size: 1.6rem;
+  }
+  
+  figcaption {
+    text-align: center;
+    color: #e0d93d;
+    padding: 10px;
+  }
+  
+  #img-div {
+    width: 90%;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
+  #story-section {
+    width: 80%;
+    color: #e0d93d;
+    margin: 10px auto;
+    padding: 0 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
+  #tribute-info {
+    font-weight: 700;
+    font-size: 2rem
+  }
+  
+  .tribute-story {
+    padding: 0 30px;
+  }
+  
+  a {
+    color: #e0d93d;
+  }
+  
+  .tribute-story-end {
+    font-weight: 700;
+  }
