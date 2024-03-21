@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>End Game Enhanced</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DocumentationPageStyles.css">
+  </head>
+  <body>
+    <main id="main-doc">
+
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          End Game Enhanced is a mod for Minecraft that aims to, well, enhance the end game by adding new best in slot items for almost every slot, as well as new reasons to kill just about every aggressive Mob in the game, including the Warden.
+        </p>
+        <p>
+          For the equipment in this mod I took a lot of inspiration from Equivalent Exchange 2, which was a mod that was included in the Tekkit (now Tekkit classic) mod pack for Minecraft 1.2.5. Other aspects of this mod, like randomly finding gems I got from Oldschool Runescape. A lot of the equipment I got ideas from other games like Oldschool Runescape, Borderlands, and God of War.
+        </p>
+        <p>
+            I've always liked the idea of having a reason to kill all of the mobs in the game, and while all mobs in vanilla have their uses, it's not really enough to me. Also, for a best in slot, Netherite is really easy to get, even considering the fact you have to get a Template from Bastions for it. So I thought giving mobs new unique drops that are used to make new end game equipment could be fun.
+        </p>
+      </section>
+      <section class="main-section" id="Inevitable_Equipment">
+        <header>Inevitable Equipment</header>
+        <p>Inevitable is a new Tier of item above Netherite. They're not meant to be overly powerful, but a decent step up from Netherite in damage, usefulness, and some special effects given when they're in the main hand or equipped.</p>
+        <p>Here is a list of all the Inevitable equipment:</p>
+        <ul>
+          <li>Netherrath</li>
+          <li>Voidwaker</li>
+          <li>Sculk Bringer</li>
+          <li>Webweaver</li>
+          <li>Sculk Slinger</li>
+          <li>Tide Breaker</li>
+          <li>Infernal Pickaxe</li>
+          <li>Unkempt Harold</li>
+          <li>Leviathan's Axe</li>
+          <li>Sanguine Scythe</li>
+          <li>Obsidian Faceguard</li>
+          <li>Obsidian Chestplate</li>
+          <li>Obsidian Legguards</li>
+          <li>Obsidian Boots</li>
+        </ul>
+        <p>All of these items have unique abilities in one way or another.  Here is some code for a look into how Webweaver saves ammo:</p>
+        <div class="code-div">
+          <code>float randomFloat = RandomSource.create().nextFloat();</code>
+          <code>int saveChance = 0;</code>
+          <code>if (randomFloat >= 0 && randomFloat <= 0.25F && shouldRoll) {</code>
+          <code>&nbsp;&nbsp;&nbsp;&nbsp;saveChance = 1;</code>
+          <code>}</code>
+          <code>if (shouldConsumeArrow && !hasCreative) {</code>
+          <code>&nbsp;&nbsp;&nbsp;&nbsp;ammoStack.shrink(1);</code>
+          <code>&nbsp;&nbsp;&nbsp;&nbsp;ammoStack.grow(saveChance);</code>
+          <code>&nbsp;&nbsp;&nbsp;&nbsp;if (ammoStack.isEmpty()) {</code>
+          <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;player.getInventory().removeItem(ammoStack);</code>
+          <code>}</code>
+        </div>
+      </section>
+      <section class="main-section" id="Smithing_Templates">
+        <header>Smithing Templates</header>
+        <p>Smithing Templates are found all over the game and are used to create Inevitable equipment.</p>
+      </section>
+      <section class="main-section" id="Essence">
+        <header>Essence</header>
+        <p>Essence is crafted from various different blocks, items, and other Essence and is used to create Inevitable equipment.</p>
+      </section>
+      <section class="main-section" id="Gems_and_Crystals">
+        <header>Gems and Crystals</header>
+        <p>Gems and crystals are found in various different ways, from killing mobs, to looting chests, and mining.</p>
+      </section>
+      <section class="main-section" id="Unique_Drops">
+        <header>Unique Drops</header>
+        <p>Many Unique drops have been added to just about every aggressive mob, as well as some crops and sculk type blocks.</p>
+      </section>
+
+      <nav id="navbar">
+        <header id="nav-header">End Game Enhanced</header>
+        <ul>
+          <li>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Inevitable_Equipment">Inevitable Equipment</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Smithing_Templates">Smithing Templates</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Essence">Essence</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Gems_and_Crystals">Gems and Crystals</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Unique_Drops">Unique Drops</a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+  </body>
+</html>
