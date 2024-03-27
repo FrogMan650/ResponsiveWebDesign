@@ -1,0 +1,173 @@
+:root {
+    --background-color: rgb(48, 48, 48);
+    --background-color2: rgb(34, 34, 34);
+    --text-color: rgb(241, 241, 241);
+    --text-color2: rgb(230, 230, 230);
+    --text-color3: rgb(0, 129, 6);
+    --text-color4: rgb(0, 100, 5);
+}
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+}
+main {
+    max-width: 1920;
+    margin: 0 auto;
+}
+#navbar {
+    width: 100%;
+    height: 7vh;
+    top: 0;
+    left: 0;
+    background-color: var(--text-color);
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+    padding-right: 10px;
+}
+#navbar a {
+    text-decoration: none;
+    color: var(--text-color);
+    border: 2px solid var(--text-color3);
+    background-color: var(--text-color4);
+    border-radius: 5px;
+    font-size: 3rem;
+    padding: 5px;
+}
+#navbar a:hover {
+    border: 2px solid var(--text-color4);
+    background-color: var(--text-color3);
+
+}
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-size: cover;
+}
+#welcome-section img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.5);
+    object-fit: cover;
+}
+#welcome-section h1 {
+    color: var(--text-color);
+    font-size: 5rem;
+    padding-left: 100px;
+    padding-top: 300px;
+    z-index: 1;
+}
+#welcome-section h2 {
+    color: var(--text-color);
+    font-size: 3.5rem;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-right: 50%;
+    z-index: 1;
+}
+#about {
+    background-color: var(--background-color2);
+    padding: 50px 100px
+}
+#about h1 {
+    font-size: 4rem;
+    color: var(--text-color);
+    text-align: center;
+}
+#about p {
+    font-size: 2rem;
+    color: var(--text-color);
+}
+#projects {
+    background-color: var(--background-color);
+    padding: 50px;
+}
+#projects-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#projects-div div {
+    border: 2px solid var(--text-color3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+#projects h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--text-color);
+    padding: 10px;;
+}
+#projects a {
+    font-size: 3rem;
+    padding: 10px;
+    color: var(--text-color);
+    text-align: center;
+    text-decoration: none;
+}
+#projects img {
+    max-width:500px;
+    max-height: 400px;
+}
+#contact {
+    background-color: var(--background-color2);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#contact h1 {
+    font-size: 4rem;
+    color: var(--text-color);
+    text-align: center;
+    padding-bottom: 25px;
+}
+#social-media {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#social-media a {
+    font-size: 5rem;
+    text-decoration: none;
+    border: 2px solid var(--text-color3);
+    border-radius: 5px;
+    color: var(--text-color);
+    background-color: var(--text-color4);
+    padding: 10px;
+}
+#social-media a:hover {
+    border: 2px solid var(--text-color4);
+    background-color: var(--text-color3);
+
+}
+footer {
+    height: 100px;
+    background-color: var(--background-color);
+}
+footer h3 {
+    font-size: 2rem;
+    color: var(--text-color);
+    text-align: center;
+    padding: 30px;
+}
+@media only screen and (max-width: 600px) {
+    *, ::after, ::before {
+        font-size: 6px;
+    }
+}
